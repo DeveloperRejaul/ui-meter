@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'ui-meter';
+import { multiply, Button } from 'ui-meter';
 
 export default function App() {
   const [result, setResult] = useState<number | undefined>();
@@ -12,6 +12,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
+      <Button />
+      <Text> Hellsadfasfd</Text>
     </View>
   );
 }
