@@ -5,5 +5,5 @@ export function Button() {
 }
 
 export function ProgressBar() {
-  return <View/>
- }
+  return <View />;
+}
