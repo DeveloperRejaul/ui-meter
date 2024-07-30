@@ -1,9 +1,9 @@
-import { Text } from 'react-native';
-
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
-}
+import { Text, View } from 'react-native';
 
 export function Button() {
   return <Text> Hello World </Text>;
 }
+
+export function ProgressBar() {
+  return <View/>
+ }
