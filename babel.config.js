@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 module.exports = {
-  presets: [
-    ['module:react-native-builder-bob/babel-preset', { modules: 'commonjs' }],
-  ],
+ presets: [
+  ['module:react-native-builder-bob/babel-preset', { modules: 'commonjs' }],
+ ],
 };

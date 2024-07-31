@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const { getDefaultConfig } = require('@expo/metro-config');
 const { getConfig } = require('react-native-builder-bob/metro-config');
@@ -12,7 +14,7 @@ const root = path.resolve(__dirname, '..');
  * @type {import('metro-config').MetroConfig}
  */
 module.exports = getConfig(getDefaultConfig(__dirname), {
-  root,
-  pkg,
-  project: __dirname,
+ root,
+ pkg,
+ project: __dirname,
 });
