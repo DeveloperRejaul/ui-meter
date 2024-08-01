@@ -1,9 +1,13 @@
-import { View, Text } from 'react-native';
+import type { IBoxProps } from '@/src/types/components';
+import { View } from 'react-native';
 
-export default function VStack() {
+export default function(props: IBoxProps) {
  return (
-  <View>
-   <Text>VStack</Text>
+  <View
+   style={{...props, flexDirection:'column'}}
+   {...props}
+  >
+   {props.children}
   </View>
  );
 }

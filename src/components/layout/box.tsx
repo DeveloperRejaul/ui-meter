@@ -1,9 +1,14 @@
-import { View, Text } from 'react-native';
+import { View} from 'react-native';
+import type { IBoxProps } from '@/src/types/components';
 
-export default function box() {
+
+export default function Box(props: IBoxProps) {
  return (
-  <View>
-   <Text>box</Text>
+  <View
+   style={{...props}}
+   {...props}
+  >
+   {props.children}
   </View>
  );
 }

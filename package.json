@@ -1,7 +1,7 @@
 {
   "name": "ui-meter",
   "version": "0.1.3",
-  "description": "This is a react native ui components libary",
+  "description": "This is a react native ui components library",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -36,7 +36,7 @@
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "lint-fix":"eslint --fix --ext .js,.jsx,ts,tsx .",
+    "lint-fix": "eslint --fix --ext .js,.jsx,ts,tsx .",
     "clean": "del-cli lib",
     "prepare": "bob build",
     "release": "release-it"
@@ -93,8 +93,8 @@
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
-      "<rootDir>/lib/"
+      "UI-Meter/example/node_modules",
+      "UI-Meter/lib/"
     ]
   },
   "commitlint": {

@@ -2,14 +2,21 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "ui-meter": ["./src/index"]
+      "ui-meter": [
+        "./src/index"
+      ],
+      "@/*": [
+        "./*"
+      ]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
-    "lib": ["ESNext"],
+    "lib": [
+      "ESNext"
+    ],
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmit": true,
