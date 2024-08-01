@@ -1,0 +1,22 @@
+Conventional Commit Message Format
+A typical commit message should consist of:
+
+Type: A type that describes the kind of change. Common types include 
+feat (new feature), 
+fix (bug fix), 
+docs (documentation), 
+style (formatting, missing semi-colons, etc.), 
+refactor (code change that neither fixes a bug nor adds a feature), 
+perf (performance improvements), 
+test (adding missing tests or correcting existing tests), 
+build (changes that affect the build system or external dependencies), 
+ci (changes to our CI configuration files and scripts), 
+chore (other changes that don't modify src or test files),
+revert (reverting previous commit).
+
+Scope: A scope that provides additional contextual information about the change. It's optional but useful for understanding the scope of the change.
+Subject: A short description of the change.
+Body: A more detailed explanation of the change. This is optional but recommended for complex changes.
+Footer: Information about breaking changes or issues this commit closes. This is optional.
+
+example : git commit -m "feat(login): add JWT authentication for user login"
