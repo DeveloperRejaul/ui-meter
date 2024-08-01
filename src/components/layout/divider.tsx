@@ -1,5 +1,6 @@
-import type { DividerProps } from '@/src/types/components';
+
 import {View } from 'react-native';
+import type { DividerProps } from '../../types/components';
 
 export default function (props: DividerProps) {
  const { orientation = 'horizontal', backgroundColor='#000' } = props;
