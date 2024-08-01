@@ -10,7 +10,14 @@ module.exports = function (api) {
  api.cache(true);
  return getConfig(
   {
-   presets: ['babel-preset-expo'],
+   presets: [
+    ['babel-preset-expo', { jsxImportSource: 'nativewind' }],
+    'nativewind/babel',
+   ],
+   plugins: [
+    '@babel/plugin-proposal-export-namespace-from',
+    'react-native-reanimated/plugin',
+   ],
   },
   { root, pkg }
  );
