@@ -1,3 +1,4 @@
+
 import type { IBoxProps } from '../../types/components'; 
 import { View } from 'react-native';
 

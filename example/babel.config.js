@@ -11,8 +11,7 @@ module.exports = function (api) {
  return getConfig(
   {
    presets: [
-    ['babel-preset-expo', { jsxImportSource: 'nativewind' }],
-    'nativewind/babel',
+    ['babel-preset-expo'],
    ],
    plugins: [
     '@babel/plugin-proposal-export-namespace-from',
