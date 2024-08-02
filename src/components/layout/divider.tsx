@@ -1,4 +1,4 @@
-import type { DividerProps } from '@/src/types/components';
+import type { DividerProps } from '../../types/components'; 
 import {View } from 'react-native';
 
 export default function (props: DividerProps) {

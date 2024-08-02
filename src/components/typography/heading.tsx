@@ -1,4 +1,4 @@
-import type { ITextProps } from '@/src/types/components';
+import type { ITextProps } from '../../types/components'; 
 import { Text as RNText } from 'react-native';
 
 export default function(props: ITextProps) {

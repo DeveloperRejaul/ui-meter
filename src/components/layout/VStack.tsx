@@ -1,4 +1,4 @@
-import type { IBoxProps } from '@/src/types/components';
+import type { IBoxProps } from '../../types/components'; 
 import { View } from 'react-native';
 
 export default function(props: IBoxProps) {
