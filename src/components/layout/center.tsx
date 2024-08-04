@@ -1,14 +1,12 @@
 
 import type { IBoxProps } from '../../types/components'; 
-import { View } from 'react-native';
+import Box from './box';
+
 
 export default function(props: IBoxProps) {
  return (
-  <View
-   style={[{ ...props }, {justifyContent:'center', alignItems:'center'}]}
-   {...props}
-  >
+  <Box {...props} justifyContent='center' alignItems='center'>
    {props.children}
-  </View>
+  </Box>
  );
 }

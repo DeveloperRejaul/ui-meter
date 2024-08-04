@@ -26,16 +26,15 @@ export { default as HStack } from './components/layout/HStack';
 
 // forms
 // export { default as Input } from './components/forms/Input';
-// export { default as Button } from './components/forms/button';
-// export { default as Checkbox } from './components/forms/checkbox';
-// export { default as FormControl } from './components/forms/form-control';
-// export { default as Link } from './components/forms/link';
-// export { default as Pressable } from './components/forms/pressable';
-// export { default as Radio} from './components/forms/radio';
-// export { default as Select} from './components/forms/select';
-// export { default as Slider} from './components/forms/slider';
-// export { default as Switch} from './components/forms/switch';
-// export { default as Textarea } from './components/forms/textarea';
+export { default as Button } from './components/forms/button';
+export { default as ButtonText } from './components/forms/buttonText';
+export { default as Checkbox } from './components/forms/checkbox';
+export { default as Link } from './components/forms/link';
+export { default as Radio} from './components/forms/radio';
+export { default as Select} from './components/forms/select';
+export { default as Slider} from './components/forms/slider';
+export { default as Switch} from './components/forms/switch';
+export { default as Textarea } from './components/forms/textarea';
 
 //media-and-icons
 // export { default as Avatar } from './components/media-and-icons/avatar';

@@ -1,9 +1,14 @@
-import { View, Text } from 'react-native';
+import { Center, Checkbox} from 'ui-meter';
 
 export default function App() {
+
+ const handleCheck = (check: boolean) => {
+  console.log(check);
+ }; 
+
  return (
-  <View>
-   <Text>index</Text>
-  </View>
+  <Center flex={1}>
+   <Checkbox onCheck={handleCheck} size={50} />
+  </Center>
  );
 }

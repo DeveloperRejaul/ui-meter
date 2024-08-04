@@ -1,9 +1,12 @@
-import { View, Text } from 'react-native';
+import { Pressable } from 'react-native';
+import type { IButtonProps } from '../../types/components';
+import { getProps } from '../../parser/view';
 
-export default function Button() {
+export default (props: IButtonProps) => {
+ const { root , style} = getProps(props);
  return (
-  <View>
-   <Text>button</Text>
-  </View>
+  <Pressable {...root} style={style} >
+   {props.children}
+  </Pressable>
  );
-}
+};

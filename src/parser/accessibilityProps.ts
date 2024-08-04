@@ -1,0 +1,36 @@
+export const ACCESSIBILITY_PROPS = [
+ 'accessible',
+ 'accessibilityActions',
+ 'accessibilityLabel',
+ 'accessibilityRole',
+ 'accessibilityState',
+ 'accessibilityHint',
+ 'accessibilityValue',
+ 'onAccessibilityAction',
+ 'importantForAccessibility',
+ 'role',
+ 'aria-label',
+ 'aria-busy',
+ 'aria-checked',
+ 'aria-disabled',
+ 'aria-expanded',
+ 'aria-selected',
+ 'aria-valuemax',
+ 'aria-valuemin',
+ 'aria-valuenow',
+ 'aria-valuetext',
+];
+export const ACCESSIBILITY_ANDROID_PROPS = [
+ 'accessibilityLabelledBy',
+ 'accessibilityLiveRegion',
+ 'importantForAccessibility',
+];
+export const ACCESSIBILITY_IOS_PROPS = [
+ 'accessibilityElementsHidden',
+ 'accessibilityViewIsModal',
+ 'onAccessibilityEscape',
+ 'onAccessibilityTap',
+ 'onMagicTap',
+ 'accessibilityIgnoresInvertColors',
+ 'accessibilityLanguage',
+];

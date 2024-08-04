@@ -1,13 +1,10 @@
-import { View } from 'react-native';
 import type { IBoxProps } from '../../types/components';
+import Box from './box';
 
 export default function(props: IBoxProps) {
  return (
-  <View
-   {...props}
-   style={{ ...props, flexDirection:'row'}}
-  >
+  <Box {...props} flexDirection='row'>
    {props.children}
-  </View>
+  </Box>
  );
 }

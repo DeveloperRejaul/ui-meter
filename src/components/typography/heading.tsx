@@ -1,7 +1,6 @@
-
-import { Text as RNText } from 'react-native';
 import type { ITextProps } from '../../types/components';
+import Text from './text';
 
-export default function(props: ITextProps) {
- return <RNText style={{...props, fontWeight:'bold', fontSize:25}}>{props.children}</RNText>;
+export default function (props: ITextProps) {
+ return <Text fontWeight='bold' fontSize={20} {...props} >{props.children}</Text>;
 }
