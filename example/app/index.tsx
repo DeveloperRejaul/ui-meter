@@ -1,4 +1,7 @@
-import { Center, Checkbox} from 'ui-meter';
+import { Checkbox } from 'ui-meter';
+import { View } from 'react-native';
+import app from '../app';
+
 
 export default function App() {
 
@@ -6,9 +9,10 @@ export default function App() {
   console.log(check);
  }; 
 
+    
  return (
-  <Center flex={1}>
+  <View style={app.container} >
    <Checkbox onCheck={handleCheck} size={50} />
-  </Center>
+  </View>
  );
 }

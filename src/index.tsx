@@ -1,3 +1,5 @@
+// import { cn } from './generator/main';
+
 // typography
 export { default as Heading } from './components/typography/heading';
 export { default as Text } from './components/typography/text';
@@ -61,5 +63,4 @@ export { default as Textarea } from './components/forms/textarea';
 
 
 
-
-
+// utils
