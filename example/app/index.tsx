@@ -1,16 +1,15 @@
-import { Center, Checkbox } from 'ui-meter';
-
+import { Center, Button, ButtonText } from 'ui-meter';
 
 export default function App() {
-
- const handleCheck = (check: boolean) => {
-  console.log(check);
- }; 
-
+ const handlePress = () => { 
+  console.log('hello world!');
+ };
     
  return (
   <Center flex={1}>
-   <Checkbox onCheck={handleCheck} label='Label' />
+   <Button onPress={handlePress}>
+    <ButtonText >Click Me</ButtonText>
+   </Button>
   </Center>
  );
 }

@@ -51,6 +51,9 @@ export default function App() {
   - [Typography](#typography)
     - [Text](#text)
     - [Heading](#heading)
+  - [From](#from)
+    - [Button](#button)
+    - [CheckBox](#checkbox)
 - [Props](#props)
   - [Layout Props](#layout-props)
   - [Typography Props](#typography-props)
@@ -190,6 +193,44 @@ export default function App() {
         <Heading color="red">Hello World</Heading>
       </Center>
     </Box>
+  );
+}
+```
+
+#### Button
+
+```js
+import { Center, Button, ButtonText } from 'ui-meter';
+
+export default function App() {
+  const handlePress = () => {
+    console.log('hello world!');
+  };
+
+  return (
+    <Center flex={1}>
+      <Button onPress={handlePress}>
+        <ButtonText>Click Me</ButtonText>
+      </Button>
+    </Center>
+  );
+}
+```
+
+#### CheckBox
+
+```js
+import { Center, Checkbox } from 'ui-meter';
+
+export default function App() {
+  const handleCheck = (check: boolean) => {
+    console.log(check);
+  };
+
+  return (
+    <Center flex={1}>
+      <Checkbox onCheck={handleCheck} label="Label" />
+    </Center>
   );
 }
 ```
