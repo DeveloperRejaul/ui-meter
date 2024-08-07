@@ -1,6 +1,9 @@
+import { colors } from './colors';
+
+
 export const theme = {
  theme: ['DARK','LIGHT'],
- colors: {},
+ colors,
  shortStyle: {},
  fonts: {},
  components: {},

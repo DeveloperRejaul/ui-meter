@@ -20,8 +20,15 @@ export interface ICheckBoxProps {
  inActiveBackground?: string
  activeBorder?: string
  inActiveBorder?: string
- activeIcon?: string
- inActiveIcon?: string,
+ invalidBorder?: string
+ activeIconColor?: string
+ inActiveIconColor?: string,
  size?: number,
- rounded?: number
+ rounded?: number;
+ label?: string
+ labelStyle?: TextStyle
+ containerStyle?: ViewStyle
+ boxStyle?: ViewStyle,
+ isDisabled?: boolean;
+ isInvalid?: boolean;
 }
