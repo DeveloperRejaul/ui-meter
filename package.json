@@ -1,6 +1,6 @@
 {
   "name": "ui-meter",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "This is a react native ui components library",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
