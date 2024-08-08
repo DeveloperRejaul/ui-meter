@@ -1,3 +1,4 @@
+import type React from 'react';
 import type { PressableProps, TextProps, TextStyle, ViewProps, ViewStyle } from 'react-native';
 
 
@@ -31,4 +32,30 @@ export interface ICheckBoxProps {
  boxStyle?: ViewStyle,
  isDisabled?: boolean;
  isInvalid?: boolean;
+}
+
+
+export interface IRadioProps { 
+ size?: number;
+ inActiveColor?: string;
+ activeColor?: string;
+ inValidColor?: string;
+ label?: string;
+ isInvalid?: boolean;
+ isDisabled?: boolean;
+ onChange?: (value: string) => void;
+ value: string;
+}
+
+export interface IRadioGroupProps extends IBoxProps { 
+ children?: React.ReactNode;
+ onChange: (value: string) => void;
+}
+
+export interface ISwitchProps { 
+ size?: number
+ onColor?: string
+ offColor?: string
+ ballColor?: string,
+ onChange?: (value: boolean) => void
 }

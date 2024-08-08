@@ -7,7 +7,9 @@ Introducing our comprehensive React Native UI library, designed to streamline yo
 ## Installation
 
 ```sh
-npm install ui-meter
+npm install ui-meter react-native-svg
+// or
+yarn add ui-meter react-native-svg
 ```
 
 ## Usage
@@ -54,6 +56,8 @@ export default function App() {
   - [From](#from)
     - [Button](#button)
     - [CheckBox](#checkbox)
+    - [Radio](#radio)
+    - [Switch](#switch)
 - [Props](#props)
   - [Layout Props](#layout-props)
   - [Typography Props](#typography-props)
@@ -230,6 +234,55 @@ export default function App() {
   return (
     <Center flex={1}>
       <Checkbox onCheck={handleCheck} label="Label" />
+    </Center>
+  );
+}
+```
+
+#### Radio
+
+```js
+import { Center, Radio, RadioGroup } from 'ui-meter';
+
+export default function App() {
+  const handleChange = (value: string) => {
+    console.log(value);
+  };
+
+  return (
+    <Center flex={1}>
+      <RadioGroup onChange={handleChange} rowGap={10}>
+        <Radio
+          label="label1"
+          value="change 1"
+          isDisabled={false}
+          isInvalid={false}
+        />
+        <Radio
+          label="label2"
+          value="change 2"
+          isDisabled={false}
+          isInvalid={false}
+        />
+      </RadioGroup>
+    </Center>
+  );
+}
+```
+
+#### Switch
+
+```js
+import { Center, Switch } from 'ui-meter';
+
+export default function App() {
+  const handleChange = (value: boolean) => {
+    console.log(value);
+  };
+
+  return (
+    <Center flex={1}>
+      <Switch onChange={handleChange} />
     </Center>
   );
 }

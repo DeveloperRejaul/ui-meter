@@ -29,9 +29,9 @@ export { default as HStack } from './components/layout/HStack';
 export { default as Button } from './components/forms/button';
 export { default as ButtonText } from './components/forms/buttonText';
 export { default as Checkbox } from './components/forms/checkbox';
-// export { default as Radio} from './components/forms/radio';
-// export { default as Switch} from './components/forms/switch';
-
+export { default as Radio} from './components/forms/radio';
+export { default as RadioGroup} from './components/forms/radioGroup';
+export { default as Switch} from './components/forms/switch';
 // export { default as Link } from './components/forms/link';
 // export { default as Select} from './components/forms/select';
 // export { default as Slider} from './components/forms/slider';

@@ -1,15 +1,13 @@
-import { Center, Button, ButtonText } from 'ui-meter';
+import { Center, Switch } from 'ui-meter';
 
 export default function App() {
- const handlePress = () => { 
-  console.log('hello world!');
+ const handleChange = (value: boolean) => { 
+  console.log(value);
  };
     
  return (
   <Center flex={1}>
-   <Button onPress={handlePress}>
-    <ButtonText >Click Me</ButtonText>
-   </Button>
+   <Switch onChange={handleChange} size={50} />
   </Center>
  );
 }
