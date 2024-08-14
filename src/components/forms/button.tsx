@@ -4,16 +4,25 @@ import { getProps } from '../../parser/view';
 import { colors } from '../../theme/colors';
 
 export default (props: IButtonProps) => {
- const { root , style} = getProps(props);
- return (
-  <Pressable {...root} style={[{
-   backgroundColor: colors.success[500],
-   paddingHorizontal: 15,
-   paddingVertical: 5,
-   borderRadius:7
-  }, style]}
-  >
-   {props.children}
-  </Pressable>
- );
+  const { root, style } = getProps(props);
+  const { variant = 'solid' } = props;
+  return (
+    <Pressable
+      {...root}
+      style={[
+        {
+          backgroundColor:
+            variant === 'solid' ? colors.success[500] : 'transparent',
+          paddingHorizontal: 15,
+          paddingVertical: 5,
+          borderRadius: 7,
+          borderWidth: 1,
+          borderColor: colors.success[500],
+        },
+        style,
+      ]}
+    >
+      {props.children}
+    </Pressable>
+  );
 };

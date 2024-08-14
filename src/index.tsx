@@ -25,13 +25,13 @@ export { default as HStack } from './components/layout/HStack';
 // export { default as Toast } from './components/feedback/toast';
 
 // forms
-// export { default as Input } from './components/forms/Input';
+export { default as Input } from './components/forms/Input';
 export { default as Button } from './components/forms/button';
 export { default as ButtonText } from './components/forms/buttonText';
 export { default as Checkbox } from './components/forms/checkbox';
-export { default as Radio} from './components/forms/radio';
-export { default as RadioGroup} from './components/forms/radioGroup';
-export { default as Switch} from './components/forms/switch';
+export { default as Radio } from './components/forms/radio';
+export { default as RadioGroup } from './components/forms/radioGroup';
+export { default as Switch } from './components/forms/switch';
 // export { default as Link } from './components/forms/link';
 // export { default as Select} from './components/forms/select';
 // export { default as Slider} from './components/forms/slider';
@@ -41,6 +41,10 @@ export { default as Switch} from './components/forms/switch';
 // export { default as Avatar } from './components/media-and-icons/avatar';
 // export { default as Icon } from './components/media-and-icons/icon';
 // export { default as Image } from './components/media-and-icons/image';
+export { default as CheckIcon } from './assets/icons/check';
+export { default as EyeIcon } from './assets/icons/eye';
+export { default as EyeOffIcon } from './assets/icons/eyeOff';
+export { default as LockIcon } from './assets/icons/lock';
 
 // overlay
 // export { default as AlertDialog } from './components/overlay/alert-dialog';
@@ -58,8 +62,5 @@ export { default as Switch} from './components/forms/switch';
 // export { default as useFrom} from './hooks/useFrom';
 // export { default as useMediaQuery} from './hooks/useMediaQuery';
 // export { default as useQuery} from './hooks/useQuery';
-
-
-
 
 // utils

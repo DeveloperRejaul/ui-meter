@@ -1,8 +1,10 @@
 import type React from 'react';
-import type { PressableProps, TextProps, TextStyle, ViewProps, ViewStyle } from 'react-native';
+import type { PressableProps, TextInputProps, TextProps, TextStyle, ViewProps, ViewStyle } from 'react-native';
 
 
-export interface IButtonProps extends PressableProps, ViewStyle{ }
+export interface IButtonProps extends PressableProps, ViewStyle{
+    variant?: "solid" | "outline";
+ }
 
 export interface IBoxProps extends ViewProps, ViewStyle { }
 
@@ -58,4 +60,20 @@ export interface ISwitchProps {
  offColor?: string
  ballColor?: string,
  onChange?: (value: boolean) => void
+}
+
+export interface InputProps extends TextInputProps {
+    disabled?: boolean;
+    invalid?: boolean;
+    isReadOnly?: boolean;
+    focusColor?: string;
+    containerStyle?: ViewStyle,
+    inputStyle?: TextStyle
+    variant?: "outline" | "rounded" | "underline",
+    leftIcon?: JSX.Element
+    rightIcon?: JSX.Element
+    type?: "password";
+    passwordLockBg?: string;
+    passwordLockColor?: string;
+    passwordEyeColor?: string;
 }

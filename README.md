@@ -58,6 +58,7 @@ export default function App() {
     - [CheckBox](#checkbox)
     - [Radio](#radio)
     - [Switch](#switch)
+    - [Input](#input)
 - [Props](#props)
   - [Layout Props](#layout-props)
   - [Typography Props](#typography-props)
@@ -204,17 +205,13 @@ export default function App() {
 #### Button
 
 ```js
-import { Center, Button, ButtonText } from 'ui-meter';
+import { Button, ButtonText, Center } from 'ui-meter';
 
 export default function App() {
-  const handlePress = () => {
-    console.log('hello world!');
-  };
-
   return (
-    <Center flex={1}>
-      <Button onPress={handlePress}>
-        <ButtonText>Click Me</ButtonText>
+    <Center flex={1} paddingHorizontal={10}>
+      <Button variant="outline">
+        <ButtonText color="black"> Click Me </ButtonText>
       </Button>
     </Center>
   );
@@ -288,6 +285,25 @@ export default function App() {
 }
 ```
 
+#### Input
+
+```js
+import { Center, Input } from 'ui-meter';
+
+export default function App() {
+  return (
+    <Center flex={1} paddingHorizontal={10}>
+      <Input
+        variant="underline"
+        placeholder="Enter Your Password"
+        type="password"
+        passwordLockBg="#fff"
+      />
+    </Center>
+  );
+}
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
@@ -325,7 +341,3 @@ Answer 2
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-```
-
-```
