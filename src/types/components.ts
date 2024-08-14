@@ -3,7 +3,7 @@ import type { PressableProps, TextInputProps, TextProps, TextStyle, ViewProps, V
 
 
 export interface IButtonProps extends PressableProps, ViewStyle{
-    variant?: "solid" | "outline";
+    variant?: 'solid' | 'outline';
  }
 
 export interface IBoxProps extends ViewProps, ViewStyle { }
@@ -69,10 +69,10 @@ export interface InputProps extends TextInputProps {
     focusColor?: string;
     containerStyle?: ViewStyle,
     inputStyle?: TextStyle
-    variant?: "outline" | "rounded" | "underline",
+    variant?: 'outline' | 'rounded' | 'underline',
     leftIcon?: JSX.Element
     rightIcon?: JSX.Element
-    type?: "password";
+    type?: 'password';
     passwordLockBg?: string;
     passwordLockColor?: string;
     passwordEyeColor?: string;
